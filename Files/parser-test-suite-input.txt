@@ -1,0 +1,32 @@
+This line does not match anything.
+This line matches "something using double quotes"
+This line matches 'something using single quotes'
+This line matches "something that escapes a double quote (i.e., \")"
+This line matches 'something that escapes a single quote (i.e., \')'
+"This line matches everything with double quotes"
+'This line matches everything with single quotes'
+'This line starts with a partial match' using single quotes
+"This line starts with a partial match" using double quotes
+This line contains a single quoted string ' but does not have a terminating single quote and should be empty
+This line contains a double quoted string " but does not have a terminating double quote and should be empty
+This line ends with a single quote '
+This line ends with a double quote "
+This "line" contains "multiple quoted" strings that should "each" show up in the 'output' 
+This 'line' contains 'multiple quoted' strings that should "each" show up in the 'output' 
+This line contains a single quote enclosed in double quotes "'"!
+This line contains a double quote enclosed in single quotes '"'!
+The double quote match on this line should output "" nothing
+The single quote match on this line should output '' nothing
+The double quote match on this line should output " " a single space
+The single quote match on this line should output ' ' a single space
+Double quoted strings" should be able to start and end with spaces "
+Single quoted strings' should be able to start and end with spaces '
+This will have multiple double quoted escapes "\"\"\"\"\"\"". Six of them, specifically.
+This will have multiple single quoted escapes '\'\'\'\'\''. Five of them, specifically.
+This single quoted line contains a quoted backslash 'that is not \ escaping' and should be seen in the output
+This double quoted line contains a quoted backslash "that is not \ escaping" and should be seen in the output
+"random" test 'one' should " be easy to pass " if 'all the above succeed'. Don't you think?
+"this shouldn\"t" be hard to 'parse or parse\'d' or "one \"\"\"" foo
+Jutaxposed quotes work well 'one'"two"'three'" "
+What if I start a quote "but then end on an escaped quote?\"
+What if I start a quote 'but then end on an escaped quote?\' and maybe some follow on text?

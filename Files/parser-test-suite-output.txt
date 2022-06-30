@@ -1,0 +1,32 @@
+﻿
+something using double quotes
+something using single quotes
+something that escapes a double quote (i.e., ")
+something that escapes a single quote (i.e., ')
+This line matches everything with double quotes
+This line matches everything with single quotes
+This line starts with a partial match
+This line starts with a partial match
+
+
+
+
+linemultiple quotedeachoutput
+linemultiple quotedeachoutput
+'
+"
+
+
+
+
+ should be able to start and end with spaces
+ should be able to start and end with spaces
+""""""
+'''''
+that is not \ escaping
+that is not \ escaping
+randomone be easy to pass all the above succeed
+this shouldn"tparse or parse'done """
+onetwothree
+
+
