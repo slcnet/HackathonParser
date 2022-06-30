@@ -2,14 +2,14 @@
 
 Your goal is to create a custom parser that can extract text from a file and output to the console (i.e., standard output). Requirements:
 
-1. The parser should process content from a text file one line at a time
-2. Lines will be delimited using a carriage return followed by a line feed (i.e., CR LF or \r\n)
+1. The parser should process content from a text file one line at a time.
+2. Lines will be delimited using a carriage return followed by a line feed (i.e., CR LF or \r\n).
 3. The content of each match should be output to the console exactly as it was matched (e.g., without case being changed). Content is matched when:
-  1. It is within a set of double quotes (i.e., within a set of ") OR it is within a set of single quotes (i.e., within a set of ').
-  2. When within a match, the enclosing quote character (i.e., single or double quote) can be escaped using a backslash (e.g., ‘this is David\’s son’ starts with ‘this’ and ends with ‘son’).
-  3. A backslash enclosed in single or double quotes has no special meaning if not followed by the enclosing quote character and would, therefore, be included in the match as a regular character (e.g., “The file is at c:\temp\foo.txt on your hard drive” will include both backslashes).
-  4. A match can never exceed one line (i.e., will not include a carriage return or line feed).
-  5. Matches cannot be nested (e.g., “one ‘two’ three” is a single match enclosed by double quotes).
+   1. It is within a set of double quotes (i.e., within a set of ") OR it is within a set of single quotes (i.e., within a set of ').
+   2. When within a match, the enclosing quote character (i.e., single or double quote) can be escaped using a backslash (e.g., ‘this is David\’s son’ starts with ‘this’ and ends with ‘son’).
+   3. A backslash enclosed in single or double quotes has no special meaning if not followed by the enclosing quote character and would, therefore, be included in the match as a regular character (e.g., “The file is at c:\temp\foo.txt on your hard drive” will include both backslashes).
+   4. A match can never exceed one line (i.e., will not include a carriage return or line feed).
+   5. Matches cannot be nested (e.g., “one ‘two’ three” is a single match enclosed by double quotes).
 4. All matched content except any escaping backslash characters must be output to the console.
 5. If no content is matched, a blank line must be inserted.
 6. The quote character must not be included in the console output.
@@ -18,7 +18,7 @@ Your goal is to create a custom parser that can extract text from a file and out
 
 ## Optional Definition
 
-If you’re familiar with regular expressions, the parser should be able to extract the content from the capturing groups in the following ECMAScript (JavaScript) regular expression when processed a single line at a time excluding any escaped single or double quotes:
+If you’re familiar with regular expressions, the parser should be able to extract the content from the capturing groups in the following ECMAScript (JavaScript) regular expression when processed a single line at a time **excluding any escaped single or double quotes**:
 
 ```regex
 (?:"((?:\\")|([^"]))+")|((?:'((?:\\')|([^\']))+'))
