@@ -28,13 +28,13 @@ This regular expression and the sample input file below can be seen at [regex101
 
 # Sample File Input
 
-The content below represents a single file containing three different lines. The highlighted portions represent the matches that should be discovered during file parsing. 
+The content below represents a single file containing three different lines. The sections enclosed in `**` represent the matches that should be discovered during file parsing. 
 
-```
-When I say "hello" to my friends the 'world' rejoices!
-This is a test to 'verify the output' of the "world's" first HQY 'Hackathon!'
+```markdown
+When I say "**hello**" to my friends the '**world**' rejoices!
+This is a test to '**verify the output**' of the "**world's**" first HQY '**Hackathon!**'
 This line is not matched but will have an equivalent blank line in the output.
-Please remember that 'HQY\'s first joy is you!'
+Please remember that '**HQY**\**'s first joy is you!**'
 ```
 
 *Note that the sample above is intentionally incomplete. Requirements are included above that are not represented in the provided sample content.*
