@@ -12,7 +12,6 @@ while (i < expectedLines.Length && i < actualLines.Length)
 {
     // this is slightly generous compared to the requirements
     var expected = expectedLines[i];
-    Console.WriteLine($"expected: '{expected}'");
     var actual = actualLines[i];
     score += expected.Equals(actual, StringComparison.InvariantCulture) ? 1 : 0;
     i++;
