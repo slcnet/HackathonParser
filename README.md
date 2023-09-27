@@ -3,18 +3,18 @@
 Your goal is to create a custom parser that can extract text from a file and output to the console (i.e., standard output). Requirements:
 
 1. The parser should process content from a text file one line at a time.
-2. Lines will be delimited using a carriage return followed by a line feed (i.e., CR LF or \r\n).
+2. Lines in the input file will be delimited using a carriage return followed by a line feed (i.e., CR LF or \r\n).
 3. The content of each match should be output to the console exactly as it was matched (e.g., without case being changed). Content is matched when:
    1. It is within a set of double quotes (i.e., within a set of ") OR it is within a set of single quotes (i.e., within a set of ').
    2. When within a match, the enclosing quote character (i.e., single or double quote) can be escaped using a backslash (e.g., ‘this is David\’s son’ starts with ‘this’ and ends with ‘son’).
    3. A backslash enclosed in single or double quotes has no special meaning if not followed by the enclosing quote character and would, therefore, be included in the match as a regular character (e.g., “The file is at c:\temp\foo.txt on your hard drive” will include both backslashes).
    4. A match can never exceed one line (i.e., will not include a carriage return or line feed).
    5. Matches cannot be nested (e.g., “one ‘two’ three” is a single match enclosed by double quotes).
-4. All matched content except any escaping backslash characters must be output to the console.
-5. If no content is matched, a blank line must be inserted.
-6. The quote character must not be included in the console output.
-7. The parser must not be implemented using a regular expression engine.
-8. The only content that may be output is the matched content for a line followed by a carriage return and line feed.
+4. All matched content except any escaping backslash characters must be output to the console. No additional text may be output. When multiple matches are present on a line, they should be output exactly as is one after another without the addition of any additional characters.
+5. If no content is matched, a blank line must be inserted into the output file, implying that the output file will have as many lines as the input file.
+6. The quote character that delimits matches must not be included in the console output. Quotes that are present within a match must be output.
+7. The parser **MUST NOT** be implemented using a regular expression engine.
+8. The only content that may be output is the matched content for a line followed by a carriage return and line feed (i.e., CR LF or \r\n).
 
 ## Optional Definition
 
@@ -25,6 +25,8 @@ If you’re familiar with regular expressions, the parser should be able to extr
 ```
 
 This regular expression and the sample input file below can be seen at [regex101.com](https://regex101.com/r/XL5O36/1).
+
+As stated in the requirements above, the parser **MUST NOT** be implemented using a regular expression engine.
 
 # Sample File Input
 
@@ -45,7 +47,7 @@ The highlights in the sample file input above identify the matched portion of th
 
 ```
 Helloworld
-Verify the outputworld’sHackathon!
+Verify the outputworld'sHackathon!
 
 HQY’s first joy is you!
 ```
