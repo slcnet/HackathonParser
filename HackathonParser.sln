@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{1CF87BD3-0
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scorer", "Scorer\Scorer.csproj", "{D3370E1B-97C4-4615-8707-6E754F05517C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,5 +25,9 @@ Global
 		{0BADA283-2229-4C5F-8F1B-9213BC1F420A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BADA283-2229-4C5F-8F1B-9213BC1F420A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BADA283-2229-4C5F-8F1B-9213BC1F420A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3370E1B-97C4-4615-8707-6E754F05517C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3370E1B-97C4-4615-8707-6E754F05517C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3370E1B-97C4-4615-8707-6E754F05517C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3370E1B-97C4-4615-8707-6E754F05517C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
