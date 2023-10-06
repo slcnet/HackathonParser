@@ -1,3 +1,12 @@
+
+this does not contain a match
+"two"
+'two'
+one "two"
+one 'two'
+'one' 'two'
+'\''
+"\""
 This line does not match anything.
 This line matches "something using double quotes"
 This line matches 'something using single quotes'
@@ -30,3 +39,7 @@ This double quoted line contains a quoted backslash "that is not \ escaping" and
 Jutaxposed quotes work well 'one'"two"'three'" "
 What if I start a quote "but then end on an escaped quote?\"
 What if I start a quote 'but then end on an escaped quote?\' and maybe some follow on text?
+""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
+'''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''
