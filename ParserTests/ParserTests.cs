@@ -63,6 +63,10 @@ public class ParserTests
     [TestCase("Jutaxposed quotes work well 'one'\"two\"'three'\" \"", "onetwothree ")]
     [TestCase("What if I start a quote \"but then end on an escaped quote?\\\"", "")]
     [TestCase("What if I start a quote 'but then end on an escaped quote?\\' and maybe some follow on text?", "")]
+    [TestCase("What if I quote something within quotes? He responded, \"I don't think your, 'yes' response is \\\"appropriate!\\\"\"", "I don't think your, 'yes' response is \"appropriate!\"")]
+    [TestCase("What if I quote something within quotes? He responded, 'I dont think your, \"yes\" response is appropriate!'", "I dont think your, \"yes\" response is appropriate!")]
+    [TestCase("Unterminated with nested quotes. He responded, \"I don't think your, 'yes' response is \\\"appropriate!\\\"", "")]
+    [TestCase("Unterminated with nested quotes. He responded, 'I dont think your, \"yes\" response is appropriate!", "")]
     public void Parse_returns_expected_result(string text, string expected)
     {
         var result = _p.Parse(text);

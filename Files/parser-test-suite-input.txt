@@ -39,6 +39,10 @@ This double quoted line contains a quoted backslash "that is not \ escaping" and
 Jutaxposed quotes work well 'one'"two"'three'" "
 What if I start a quote "but then end on an escaped quote?\"
 What if I start a quote 'but then end on an escaped quote?\' and maybe some follow on text?
+What if I quote something within quotes? He responded, "I don't think your, 'yes' response is \"appropriate!\""
+What if I quote something within quotes? He responded, 'I dont think your, "yes" response is appropriate!'
+Unterminated with nested quotes. He responded, "I don't think your, 'yes' response is \"appropriate!\"
+Unterminated with nested quotes. He responded, 'I dont think your, "yes" response is appropriate!
 """"""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""
 '''''''''''''''''''''''''''''''''''''''
