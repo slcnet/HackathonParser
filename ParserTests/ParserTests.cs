@@ -67,6 +67,8 @@ public class ParserTests
     [TestCase("What if I quote something within quotes? He responded, 'I dont think your, \"yes\" response is appropriate!'", "I dont think your, \"yes\" response is appropriate!")]
     [TestCase("Unterminated with nested quotes. He responded, \"I don't think your, 'yes' response is \\\"appropriate!\\\"", "")]
     [TestCase("Unterminated with nested quotes. He responded, 'I dont think your, \"yes\" response is appropriate!", "")]
+    [TestCase("Escaping the other quote character \"output\\'s a literal\"", "output\\'s a literal")]
+    [TestCase("Escaping the other quote character 'output\\\"s a literal'", "output\\\"s a literal")]
     public void Parse_returns_expected_result(string text, string expected)
     {
         var result = _p.Parse(text);

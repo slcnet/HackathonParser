@@ -43,6 +43,8 @@ I don't think your, 'yes' response is "appropriate!"
 I dont think your, "yes" response is appropriate!
 
 
+output\'s a literal
+output\"s a literal
 
 
 

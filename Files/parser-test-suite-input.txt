@@ -43,6 +43,8 @@ What if I quote something within quotes? He responded, "I don't think your, 'yes
 What if I quote something within quotes? He responded, 'I dont think your, "yes" response is appropriate!'
 Unterminated with nested quotes. He responded, "I don't think your, 'yes' response is \"appropriate!\"
 Unterminated with nested quotes. He responded, 'I dont think your, "yes" response is appropriate!
+Escaping the other quote character "output\'s a literal"
+Escaping the other quote character 'output\"s a literal'
 """"""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""
 '''''''''''''''''''''''''''''''''''''''
